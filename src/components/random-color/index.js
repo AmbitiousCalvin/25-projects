@@ -1,4 +1,4 @@
-import { useState } from "react";
+ import { useState } from "react";
 
 export default function RandomColor() {
   const [type, setType] = useState("hex");
@@ -81,8 +81,18 @@ export default function RandomColor() {
       >
         GENERATE RANDOM COLOR
       </button>
-      <h3>{type.toUpperCase()} COLOR: </h3>
-      <h1>{color}</h1>
+      <div
+        style={{
+          margin: "20px auto",
+          width: "250px",
+          padding: "10px",
+          backgroundColor: "#fff",
+          borderRadius: "20px",
+        }}
+      >
+        <h3>{type.toUpperCase()} COLOR: </h3>
+        <h1>{color}</h1>
+      </div>
     </div>
   );
 }
